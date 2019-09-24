@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/semantic.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/semantic.min.js"></script>
-    <title>Boukernine Abdellatif</title>
+    <title>Angular Autocomplete</title>
   </head>
   <style>
      .drapeau{
@@ -16,23 +16,35 @@
     .d{
       height: 130px;
     }
+    .container{
+      margin-top: 40px;
+    }
+    .ig{
+      width:300px;
+      height: 200px;
+      margin-left: 50px;
+      margin-bottom: 50px;
+    }
   </style>
   <body>
 
        <header>
+
          <div class="ui secondary pointing menu">
 
-            <div class="item">
+            <div class="item active">
                 Boukernine Abdellatif
            </div>
 
           <a class="item">
             About
           </a>
-           <a class="item active">
+           <a class="item ">
              Exeperience
            </a>
            <div class="right menu">
+
+             <div class="overlay">
              <a class="ui item">
                <div class="ui left pointing dropdown link item">
                    <span class="text"> <img src="images/doudou.jpg" style="width: 35px;border-radius: 4px;"></span>
@@ -50,11 +62,15 @@
                    </div>
                </div>
              </a>
+         </div>
+
            </div>
          </div>
 
 
        </header>
+
+<div class="ui container">
 
  <div class="ui segment">
    <div class="ui items">
@@ -74,25 +90,46 @@
 </div>
 
 
+</div>
 
-
+<div class="ui text container">
 
         <div class="ui top attached tabular menu ">
-           <div class="item active" data-tab="tab-name">Tab Name</div>
-          <div class="item" data-tab="tab-name2">Tab Name 2</div>
+           <a class="item active" data-tab="tab-name">About</a>
+          <a class="item" data-tab="tab-name2">Diplome</a>
+          <a class="item" data-tab="tab-name3">Competence</a>
+          <a class="item" data-tab="tab-name4">Autre</a>
        </div>
-       <div class="ui tab bottom attached segment" data-tab="tab-name">
-           <!-- Tab Content !-->  There are many
+       <div class="ui tab bottom attached segment  active" data-tab="tab-name">
+           <!-- Tab Content !-->  Boukernine abdellatif, informaticien et un ingénieur logiciel professional developper.
       </div>
       <div class="ui tab bottom attached segment" data-tab="tab-name2">
-           <!-- Tab Content !-->  There are many 
+           <!-- Tab Content !-->  je suis etudiant ....
      </div>
+     <div class="ui tab bottom attached segment" data-tab="tab-name3">
+          <!-- Tab Content !-->  je suis etudiant ....
+    </div>
+    <div class="ui tab bottom attached segment" data-tab="tab-name4">
+         <!-- Tab Content !-->  je suis etudiant ....
+   </div>
+
+</div>
 
 
 
+<div class="ui container">
+<div class="ui grid">
+   <div class="sixteen wide column">
+     <img class="ig" src="images/img.jpg" alt="">
+      <img class="ig" src="images/4.jpg" alt="">
+       <img class="ig" src="images/2.jpg" alt="">
+   </div>
+
+</div>
+</div>
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
      <footer class="">
           <div class="five ui buttons">
@@ -111,6 +148,14 @@
          ;
 
       $('.tabular.menu .item').tab();
+
+
+      $('.overlay').visibility({
+
+        type: 'fixed'
+
+      });
+
 
 </script>
   </body>
