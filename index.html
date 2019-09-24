@@ -11,9 +11,7 @@
      .drapeau{
        float:right;
        width: 100px;
-
        margin-top: 10px;
-
      }
     .d{
       height: 130px;
@@ -29,24 +27,24 @@
            </div>
 
           <a class="item">
-             Messages
+            About
           </a>
            <a class="item active">
-             Friends
+             Exeperience
            </a>
            <div class="right menu">
              <a class="ui item">
                <div class="ui left pointing dropdown link item">
                    <span class="text"> <img src="images/doudou.jpg" style="width: 35px;border-radius: 4px;"></span>
                    <div class="menu">
-                     <div class="item">
+                     <div class="header">
 
-                          Boukernine Abdellatif
+                         <img src="images/doudou.jpg" style="width: 100px;height:100px;;border-radius: 4px;">
 
                      </div>
                      <div class="divider"></div>
-                     <div class="item d">
-                          <img src="images/doudou.jpg" style="width:60px; height:70px;">
+                     <div class="item  d">
+                        Boukernine Abdellatif
                      </div>
 
                    </div>
@@ -58,8 +56,43 @@
 
        </header>
 
- 
+ <div class="ui segment">
+   <div class="ui items">
+       <div class="item">
+          <a class="ui tiny image">
+            <img src="images/abdellatif.jpg">
+          </a>
+          <div class="content">
+            <a class="header">Boukernine Abdellatif  <i class="green check icon"></i></a>
+            <div class="description">
+              <p>Hello :) je m'appelle Boukernine Abdellatif je suis un informaticien Web Developper frontend et backend.</p>
+            </div>
+               <img class="drapeau" src="images/algerie.jpg">
+          </div>
+     </div>
+   </div>
+</div>
 
+
+
+
+
+        <div class="ui top attached tabular menu ">
+           <div class="item active" data-tab="tab-name">Tab Name</div>
+          <div class="item" data-tab="tab-name2">Tab Name 2</div>
+       </div>
+       <div class="ui tab bottom attached segment" data-tab="tab-name">
+           <!-- Tab Content !-->  There are many
+      </div>
+      <div class="ui tab bottom attached segment" data-tab="tab-name2">
+           <!-- Tab Content !-->  There are many 
+     </div>
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
      <footer class="">
           <div class="five ui buttons">
@@ -70,11 +103,14 @@
      </div>
    </footer>
 <script type="text/javascript">
+
       $('.ui.dropdown')
       .dropdown({
         on: 'hover'
         })
          ;
+
+      $('.tabular.menu .item').tab();
 
 </script>
   </body>
