@@ -27,6 +27,11 @@
       margin-left: 50px;
       margin-bottom: 50px;
     }
+    .dd{
+      background-color:#f0f0f0;
+      border-radius: 5px;
+    }
+
   </style>
   <body>
 
@@ -38,18 +43,33 @@
                 Boukernine Abdellatif
            </div>
 
+
           <a class="item">
            <i class='fab fa-github' style='font-size:33px'></i>
+           <div class="ui special popup">
+             <div class="header">github</div>
+           </div>
           </a>
            <a class="item ">
-            <i class='fab fa-google-plus' style='font-size:33px;color:#ff6347'></i>
+            <i class='fab fa-google' style='font-size:33px;color:#ff6347'></i>
+            <div class="ui special popup">
+              <div class="header">google</div>
+            </div>
            </a>
           <a class="item ">
          <i class='fab fa-twitter' style='font-size:33px;color:DodgerBlue'></i>
+         <div class="ui special popup">
+           <div class="header">twitter</div>
+         </div>
             </a>
             <a class="item ">
-            <i class='fab fa-youtube' style='font-size:33px;color:red'></i>
+            <i class='fab fa-instagram' style='font-size:33px'></i>
+            <div class="ui special popup">
+              <div class="header">instagram</div>
+            </div>
             </a>
+         
+
            <div class="right menu">
 
              <div class="overlay">
@@ -89,7 +109,7 @@
           <div class="content">
             <a class="header">Boukernine Abdellatif  <i class="material-icons">done</i></a>
             <div class="description">
-              <p>Hello :) je m'appelle Boukernine Abdellatif je suis un informaticien Web Developper frontend et backend.</p>
+              <p>Hello :) je m'appelle Boukernine Abdellatif je suis un informaticien et développeure passionnée par le front-end et back-end.</p>
             </div>
                <img class="drapeau" src="images/algerie.jpg">
           </div>
@@ -100,12 +120,12 @@
 
 </div>
 
-<div class="ui text container">
+<div class="ui text container dd">
 
         <div class="ui top attached tabular menu ">
            <a class="item active" data-tab="tab-name">About</a>
-          <a class="item" data-tab="tab-name2">Diplome</a>
-          <a class="item" data-tab="tab-name3">Competence</a>
+          <a class="item" data-tab="tab-name2">Formation</a>
+          <a class="item" data-tab="tab-name3">Compétences</a>
           <a class="item" data-tab="tab-name4">Autre</a>
        </div>
        <div class="ui tab bottom attached segment  active" data-tab="tab-name">
@@ -139,6 +159,7 @@
 
 
 
+
      <footer class="">
           <div class="five ui buttons">
                  <button class="ui button">footer top</button>
@@ -164,7 +185,29 @@
 
       });
 
+        // popup
 
+      $('.fa-github')
+        .popup({
+          inline: true
+        })
+      ;
+      $('.fa-google')
+        .popup({
+          inline: true
+        })
+      ;
+      $('.fa-twitter')
+        .popup({
+          inline: true
+        })
+      ;
+      $('.fa-instagram')
+        .popup({
+          inline: true
+        })
+      ;
+       //fin popup
 </script>
   </body>
 </html>
