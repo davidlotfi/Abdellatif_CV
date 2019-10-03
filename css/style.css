@@ -1,0 +1,32 @@
+
+
+   .drapeau{
+     float:right;
+     width: 100px;
+     margin-top: 10px;
+   }
+  .d{
+    height: 130px;
+  }
+  
+  .ig{
+    width:300px;
+    height: 200px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0.5rem 1rem rgba(0.15,0.15,0,0.15) !important;
+
+  }
+  .dd{
+    background-color:#f0f0f0;
+    border-radius: 5px;
+  }
+ .univ{
+   width: 50px;
+ }
+ .mr{
+   margin:30px;
+ }
+ .footer{
+   height: 150px;
+ }
